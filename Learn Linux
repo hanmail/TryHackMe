@@ -1,1 +1,41 @@
+//Learn Linux via TryHackMe
+
+If this is your first time using TryHackMe you will need to connect to their openVPN server, this grants you access to contents you may need to do their courses Assuming we are using free TryHackMe) / Highly recommended to complete the "Welcome" room, before starting this!
+- https://www.tryhackme.com/access  -> On this page, highly recommended on top right to "Switch your VPN", connect to the one geographically closest to you.
+- Two methods of connecting through to their open VPN servers. Download OpenVPN and connect through using "Connect using openVPN" or through terminal access.
+  -- terminal access is done through installing the openVPN package. In Linux use -> sudo apt install openvpn -> Download configuration file -> sudo openvpn <your_file_name>
+  -- Note, please ensure that you're in the same directory for the terminal as your config file.
+  -- This will then connect through properly under Network Information where "connected" will be ticked.
+- All machines behave simiarly where there will be an active-machine information displayed. You can add up to an hour of additional time / terminate the room session, some may require the premium version to access or to extend time on the lessons/labs.
+
+
+- Access page via https://www.tryhackme.com/room/zthlinux
+
+~/Task 1
+Read
+
+~/Task 2 
+Read
+
+~/Task 3
+Read
+
+~/Task 4
+Connect through to SSH (Secure Shell) via the terminal and/or the use of PuTTY to gain that remote connection, continue reading.
+
+~/Task 5
+"echo" is a command that passes through a string of whatever you want it to output."echo hello" will return "hello".
+
+~/Task 6
+- Explains how many commands through Linux have additional functionality.
+- -n outputs the command without adding a new line.
+- Answer is "echo -n hello"
+
+~/Task 7
+- Explains that ls essentially lists files in your current directory. 
+- ls -a for instance, shows every file within that directory, ones that start with "." are hidden files such as config files or system files that we don't want to play around with.
+- To find the answers use man ls -> this will find all flags that can manipulate the output.
+- Answers -a, -l
+
+~/Task 8
 
