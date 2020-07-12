@@ -94,4 +94,120 @@ Connect through to SSH (Secure Shell) via the terminal and/or the use of PuTTY t
 - ";" is similar to "&&" except you, except even if first command fails your second command after ";" can still execute
 
 ~/Task 21
-- export 
+- export test1234=$USER
+- ./shiba2
+- Answer happynootnoises
+
+~/Task 22
+- Read
+
+~/Task 23
+- Read
+
+~/Task 24
+- Read
+- Explains chmod is used to set different file permissions. (change o
+- Answer 460, 777
+
+~/Task 25
+- Read
+- chown changes user and/or group ownership of files
+- chown uses this format "chown owner:group file"
+- Answer chown paradox file, chown paradox:paradox file ,  -R
+
+~/Task 26
+- Read
+- "rm" removes files that the user has the appropriate permissions to.
+- Answer -R, -f
+
+~/Task 27
+- Read
+- "mv" allows you to move files from one place to another.
+- Answer mv file /tmp
+
+~/Task 28
+- Read
+- "cp" functions similarly to "mv" except it creates a copy instead of deleting.
+
+~/Task 29
+- Read
+- "cd" is change directory and "mkdir" is make a new directory.
+- Answers cd ~, mkdir /tmp/test
+
+~/Task 30
+- Read
+- "ln" has two main uses. One is "hard linking" which which creates a copy of the original file and any changes to the new copy will directly change what is in the original file. The second use is "symbolic linking" this is to show that the attributes for the copied file are directly referencing the original file.
+- Answer ln /home/test/testfile /tmp/test
+
+~/Task 31
+- Read
+- "find" helps you find files based on the directory and above it. It works recursively so if you were to do "find /" then since it's the root directory, it would list every file on the OS.
+- The true power of this command though comes from the parameters you can provide it. You can use find dir -user , to list every file owned by a specific user; you can use find dir -group to list every file owned by a specific group.
+- Answer -perm, find /home, find /-user paradox
+
+~/Task 32
+- Read
+- "grep" is used for searching plain-text data sets for lines that match a regular expression.
+- Answer -n, grep boop /tmp/aaaa
+
+~/Task 33
+- find / -name shiba4 -type f 2>>/dev/null (community answer) -> "-type f" specifically looks for files, "2>>/dev/null" discards all errors
+- Answer test1234
+
+~/Task 34
+- Read
+
+~/Task 35
+- "sudo" acts as "running as administrator" on windows
+- Answer -u, sudo -u jen whoami, -l
+
+~/Task 36
+- Read
+- Only root has permissions to add users and groups via <adduser username> and <addgroup groupname>.
+- To add users to groups, use "usermod".
+- Answer sudo usermod -a -g test test
+
+~/Task 37
+- Read
+- Nano is a text editor, you can edit a files contents via "nano <filename>"
+
+~/Task 38
+- Read
+- Linux can run commands one after another, this is using scripts via the filename containing the extension of ".sh"
+- The ".sh" isn't technically needed if you provide a shebang "#!" -> shebangs need to be at the beginning of the file for it to execute.
+
+~/Task 39
+- /etc/passwd -> used to store users information
+- /etc/shadow -> used to store passwords of users
+- /temp -> used to store temporary files, everything gets deleted upon shutdown
+- /etc/sudoers -> Used to control the sudo permissions of every user on the system
+- /home -> The directory where all your downloads, documents etc are. -> The equivalent on Windows is C:\Users\<user>
+- /root -> The root user's home directory - The equivalent on Windows is C:\Users\Administrator
+- /usr -> Where all your software is installed 
+- bin and /sbin -> Used for system critical files - DO NOT DELETE
+- /var -> The Linux miscellaneous directory, a myriad of processes store data in /var
+- $PATH -> Stores all the binaries you're able to run - same as $PATH on Windows
+
+~/Task 40
+- "apt install <package>" is used to install certain programs, much like executable files in a windows environment.
+
+~/Task 41
+- A process means to run a program. "ps" command views a list of user created processes.
+- To view system processes use the "-ef" flag therefore "ps -ef"
+- Processes are Process IDs or PIDs, you can stop these processes via "kill" -> e.g. "kill 543"
+- "top" command shows which PIDs are taking up the most resources, this may be useful for finding the most resource intensive processes, if you'd like to end them.
+
+~/Task 42
+- Read
+
+~/Task 43
+- Start with finding all users to see if there's any useful files we can obtain
+- "find / -user shiba2 -type f 2>>/dev/null "
+- We found /var/log/test1234
+- "cat /var/log/test1234" -> "cat: /var/log/test1234: Permission denied"
+- Try again using sudo for higher level access -> "sudo cat /var/log/test1234
+- We obtain test1234 file which contains "nootnoot:notsofast"
+- Connect through via su - nootnoot
+- sudo cat /root/root.txt
+- We get our password 
+- Answer, ad91979868d06e19d8e8a9c28be56e0c
