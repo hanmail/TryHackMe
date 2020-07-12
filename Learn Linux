@@ -81,5 +81,17 @@ Connect through to SSH (Secure Shell) via the terminal and/or the use of PuTTY t
 - "&" allows for heavy commands to run in the background while you can still execute other commands.
 
 ~/Task 18
--
+- Read
+- "$" is usually used to denote variables, which arguments can be passed through and used to call at a later time. 
+- Answers export nootnoot=1111, /home/shiba2
 
+~/Task 19
+- Read
+- "|" or pipe, is used to take the output of a command and use it as input
+
+~/Task 20
+- Read
+- ";" is similar to "&&" except you, except even if first command fails your second command after ";" can still execute
+
+~/Task 21
+- export 
