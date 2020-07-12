@@ -1,6 +1,6 @@
 //Learn Linux via TryHackMe
 
-If this is your first time using TryHackMe you will need to connect to their openVPN server, this grants you access to contents you may need to do their courses Assuming we are using free TryHackMe) / Highly recommended to complete the "Welcome" room, before starting this!
+- If this is your first time using TryHackMe you will need to connect to their openVPN server, this grants you access to contents you may need to do their courses Assuming we are using free TryHackMe) / Highly recommended to complete the "Welcome" and "OpenVPN" rooms before starting, respective links https://tryhackme.com/room/welcome ; https://tryhackme.com/room/openvpn
 - https://www.tryhackme.com/access  -> On this page, highly recommended on top right to "Switch your VPN", connect to the one geographically closest to you.
 - Two methods of connecting through to their open VPN servers. Download OpenVPN and connect through using "Connect using openVPN" or through terminal access.
   -- terminal access is done through installing the openVPN package. In Linux use -> sudo apt install openvpn -> Download configuration file -> sudo openvpn <your_file_name>
@@ -38,4 +38,48 @@ Connect through to SSH (Secure Shell) via the terminal and/or the use of PuTTY t
 - Answers -a, -l
 
 ~/Task 8
+- Explains that "cat" within that example given, outputs the file and outputs "hello"
+- Can use cat --help, as that is a function/command that is supported by --help.
+- Answer -n
+
+~/Task 9
+- The "touch" command is used to create files without content, which differs from "cat" that allows you to output to that specific file.
+
+~/Task 10
+- Read, the website explains it a lot better than I. -> take time to understand how to access and call relative paths from your current path, and what the absolute path relative to that is.
+- Good takeaway, bin behaves similar to an .exe, an executable file/executable code contained.
+- Answers ./hello, ~/hello, ../hello
+
+~/Task 11
+- Create the file via "touch noot.txt" -> "./noot.txt"
+- Answer pinguftw
+
+~/Task 12
+- -su is a command abbreviated to switchuser, if used alone "su" it will switch to the root user aka "su root" 
+- Answer -s
+
+~/Task 13
+- Read
+
+~/Task 14
+- Read
+- Output redirection, e.g "echo hello > file" that would output hello to that file named "file" instead of to the terminal.
+- Also, if you to use operator on a file with the same name, it will override the contents of your existing file with the new one. 
+- Answer echo twenty > test
+
+~/Task 15
+- Read
+- Behaves simiarly to ">"
+- ">>" appends "adds information to the end of the file" instead of erasing.
+
+~/Task 16
+- Read
+- "&&" stands for 'and', allowing you to execute multiple commands in one line.
+
+~/Task 17
+- Read
+- "&" allows for heavy commands to run in the background while you can still execute other commands.
+
+~/Task 18
+-
 
